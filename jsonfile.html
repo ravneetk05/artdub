@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Posts - </h1>
+    <button onclick="loadPosts()">Load Posts</button>
+    <div id="cont"></div>
+    <hr>
+    <h1>Form for saving new posts</h1>
+    <form onsubmit="savePost()">
+        <div>
+            <label for="title">Enter title</label>
+            <input type="text" id="title">
+        </div>
+        <br>
+        <div>
+            <label for="body">Enter Body</label>
+            <input type="text" id="body">
+        </div>
+        <input type="submit" value="Add">
+    </form>
+    <hr>
+    <h1>Form for updating a post</h1>
+    <form onsubmit="updatePost()">
+        <div>
+            <label for="uid">Enter ID</label>
+            <input type="text" id="uid">
+        </div>
+        <br>
+        <div>
+            <label for="utitle">Enter title</label>
+            <input type="text" id="utitle">
+        </div>
+        <br>
+        <div>
+            <label for="ubody">Enter Body</label>
+            <input type="text" id="ubody">
+        </div>
+        <input type="submit" name="" id="" value="Update">
+    </form>
+    <hr>
+    <h1>Form for deleting a post</h1>
+    <form onsubmit="deletePost()">
+        <div>
+            <label for="did">Enter id</label>
+            <input type="text" name="" id="did">
+        </div>
+        <input type="submit" name="" id="" value="delete">
+    </form>
+    <script src="file11.js"></script>
+</body>
+</html>

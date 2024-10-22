@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ARTdub</title>
+    <link rel="icon" href="./Untitled83_20230929164433.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="parallax.css">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   </head>
+
+<body>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+  
+          <nav class="navbar bg-body-tertiary">
+              <div class="container">
+                  <a class="navbar-brand" href="#">
+                      <img src="Untitled83_20230929164433.png" alt="Bootstrap" width="30" height="24">
+                      ARTdub
+                  </a>
+              </div>
+          </nav>
+  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item me-5">
+                      <a class="nav-link active" aria-current="page" href="#home">Upcoming</a>
+                  </li>
+                  <li class="nav-item me-5">
+                      <a class="nav-link" href="#blog">Trending</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+<!-- PARALLAX -->
+
+<section>
+    <img src="background2.png" id="background">
+    <img src="stars.png" id="stars">
+    <img src="aucauc.png" id="aucauc">
+    <img src="mountains_behind.png" id="mountains_behind">
+    <h2 id="text"> ARTdub </h2>
+    <a href="mainvlog.html" id="btn" target="_blank"> EXPLORE </a>
+    <img src="mountains_front.png" id="mountains_front">
+    
+</section>
+
+<!-- TEXT About -->
+
+<div class="sec" id="sec">
+    <h2>About Us</h2> <br> <br>
+    <p> Welcome to Our Art Blog: A Celebration of Creativity
+
+        Welcome to our art blog, a dynamic platform dedicated to exploring the vibrant and diverse world of artistic expression. Here, we believe that art is more than just visual aesthetics; it is a powerful medium that communicates emotions, ideas, and stories. Our blog serves as a sanctuary for artists, art lovers, and anyone interested in the transformative power of creativity. <br>
+        
+        Art has a unique ability to resonate with individuals on a personal level. It transcends cultural boundaries and speaks to the universal human experience. In our blog, we showcase a wide array of artistic forms, from traditional paintings and sculptures to contemporary digital art and photography. Each piece we feature is carefully curated to inspire and engage our audience, encouraging readers to appreciate the beauty and depth of various artistic expressions. <br>
+        
+        One of the key components of our blog is our insightful critiques of current exhibitions. Art galleries and museums play a crucial role in the art world, providing a space for artists to share their work with the public. Our critiques aim to provide readers with a deeper understanding of the artistic processes and narratives behind the showcased pieces. We analyze the themes, techniques, and emotions conveyed in each exhibition, helping our audience to connect more profoundly with the art they encounter. <br>
+        
+        We also recognize that art is a journey of discovery and learning. That’s why we offer practical tutorials aimed at artists of all skill levels. Whether you’re a novice looking to pick up a paintbrush for the first time or a seasoned artist seeking to refine your technique, our tutorials cover a variety of topics. From foundational drawing skills to advanced painting methods and digital design, we provide step-by-step guidance to help you unlock your creative potential. We believe that everyone has the ability to create art, and our tutorials are designed to empower you on your artistic journey. <br>
+        
+        In addition to critiques and tutorials, our blog features interviews with both emerging and established artists. These interviews offer a fascinating glimpse into the minds of creators, exploring their inspirations, challenges, and the stories behind their work. Through these conversations, we aim to highlight the diverse experiences and perspectives that shape the art world. Each artist brings a unique voice and vision, and we are thrilled to share their insights with our readers. <br>
+        
+        Community engagement is at the heart of our blog. We encourage our readers to actively participate in discussions, share their thoughts, and contribute their own artistic experiences. Our comment sections and social media platforms serve as spaces for dialogue and collaboration, fostering a supportive environment where creativity can flourish. We believe that art thrives in community, and we are excited to build a network of like-minded individuals passionate about creativity and expression. <br>
+        
+        As we navigate the ever-evolving landscape of art, we also explore the impact of art on society and culture. Art has the power to challenge norms, provoke thought, and inspire change. Through our blog, we aim to spark conversations about the role of art in addressing social issues, promoting inclusivity, and encouraging empathy. We believe that art can be a catalyst for positive transformation in our world. <br>
+        
+        Join us on this exciting journey through the rich and dynamic world of art. Together, let’s explore the profound impact of creativity on our lives and the world around us. Whether you’re here to discover new artists, learn new techniques, or engage in meaningful discussions, we welcome you to be a part of our community. Let’s celebrate the beauty of artistic expression and inspire one another to think, create, and appreciate the transformative power of art! <br> </p>
+</div>
+
+<script>
+    let stars = document.getElementById('stars');
+    let aucauc = document.getElementById('aucauc');
+    let mountains_behind = document.getElementById('mountains_behind');
+    let text = document.getElementById('text');
+    let btn = document.getElementById('btn');
+    let mountains_front = document.getElementById('mountains_front');
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        aucauc.style.top = value * 1.05 + 'px';
+        mountains_behind.style.top = value * 0.45 + 'px';
+        mountains_front.style.left = value * 0 + 'px';
+        text.style.marginRight = value * 2 + 'px';
+        text.style.marginTop = value * 1.25 + 'px';
+        btn.style.marginTop = value * 1.25 + 'px';
+    })
+    
+</script>
+
+
+<br><br>
+<!-- FOOTER -->
+
+<footer>
+  <div class="container" id="footer">
+      <div class="footer-content">
+          <h3>Contact Us</h3>
+          <p>Email: artdub@gmail.com</p>
+          <p>Phone:+91 1234567890</p>
+          <p>Address: 123, Model Town, XYZ Nagar, Rajpura</p>
+      </div>
+      <div class="footer-content">
+          <h3>Quick Links</h3>
+           <ul class="list">
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="" target="_blank">Services</a></li>
+              <li><a href="" target="_blank">Products</a></li>
+              <li><a href="" target="_blank">Contact</a></li>
+           </ul>
+      </div>
+      <div class="footer-content">
+          <h3>Follow Us</h3>
+          <ul class="social-icons">
+
+           <li><a href="https://www.facebook.com/" target="_blank"><img src="https://webstockreview.net/images/white-facebook-icon-png-4.png" alt="Facebook" style="height: 20px; width: 20px;"></i></a></li>
+
+           <li><a href="https://twitter.com/login" target="_blank"><img src="https://www.pinclipart.com/picdir/big/578-5789236_twitter-clipart.png" alt="x" style="height: 17px; width: 20px;"></a></li>
+
+           <li><a href="https://www.instagram.com/" target="_blank"><img src="https://www.pngkey.com/png/full/1-19361_watercolor-instagram-icon-png-instagram-logo-white-on.png" alt="instagram" style="height: 17px; width: 17px;"></a></li>
+          </ul>
+          
+          </div>
+  </div>
+  <div class="bottom-bar">
+      <p>&copy; 2024 ARTdub . All rights reserved</p>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

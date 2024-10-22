@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARTdub</title>
+<link rel="stylesheet" href="style.css">
+
+</style>
+</head>
+<body>
+    <header>
+        <header>
+            <div class="logo">
+            
+            </div><h1 > ARTdub </h1>
+            <nav>
+                <ul >
+                    <li><a href="mainpage.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sign.html">Sign In</a></li>
+                </ul>
+            </nav>
+        </header></header>
+
+
+
+<section class="a">
+        <div class="job-listing" >
+            <h3>Holiday Season is Around the Corner—Are Your Art Sales Strategies in Place?</h3>
+            <img src="https://d1zdxptf8tk3f9.cloudfront.net/ckeditor_assets/pictures/6762/content_artist_opps_cover_images__%282%29.png" height="200px" width="300px" alt="">
+            <p class="location">Paige Simianer </p>
+            <p class="deadline">Application Deadline: MARCH 30, 2024</p>
+            <a href="vlog1.html" target="blank">read more</a>
+        </div>
+     
+        <div class="job-listing" >
+            <h3>This Artist Found a Way to Blend Painting and Weaving—And It's Stunning</h3>
+            <img src="https://d1zdxptf8tk3f9.cloudfront.net/ckeditor_assets/pictures/6767/content_Artist_Spotlight_%2879%29.png" height="200px" width="300px" alt="">
+            <p class="location">Paige Simianer </p>
+            <p class="deadline">October 10, 2024</p>
+            <a href="vlog2.html" target="blank">read more</a>
+        </div>
+        
+        <div class="job-listing" >
+          
+            <h3>GUIDE The Best Artist Grants & Opportunities in November 2024</h3>
+            <img src="https://d1zdxptf8tk3f9.cloudfront.net/articles/2015/large/artist_opps_cover_images__%288%29.png?1728926173" alt="" height="200px" width="300px">
+            <p class="location">Artwork Archive </p>
+            <p class="deadline"> APRIL 8, 2024</p>
+            <a href="vlog3.html" target="blank">read more</a>
+        </div>
+        
+        <div class="job-listing" >
+             
+                <h3>How This Artist Transforms Memory into Matter Through Art</h3>
+                <img src="https://d1zdxptf8tk3f9.cloudfront.net/ckeditor_assets/pictures/6807/content_Artist_Spotlight_%2882%29.png" alt="" height="200px" width="300px">
+                <p class="location">Paige Simianer </p>
+                <p class="deadline"> October 14, 2024</p>
+                <a href="vlog4.html" target="blank">read more</a>
+        </div> 
+        <div class="job-listing" data-location="ambala" data-job-type="part-time" data-industry="technology" data-experience="mid-level">
+            <h3>How This Artist Lets the Unexpected (and Many Mediums) Shape His Artistic Vision</h3>
+            <img src="https://d1zdxptf8tk3f9.cloudfront.net/ckeditor_assets/pictures/6757/content_Artist_Spotlight_%2878%29.png" alt="" height="200px" width="300px">
+                <p class="location">Paige Simianer </p>
+                <p class="deadline">MARCH 30, 2024</p>
+                <a href="vlog5.html" target="blank">read more</a>
+        </div>
+        <div class="job-listing" >
+                   <h3>6 Things to Stop Saying in Your Artist Statement according to your art style should be taken care of</h3>
+                   <img src="https://d1zdxptf8tk3f9.cloudfront.net/ckeditor_assets/pictures/6756/content_Artist_Spotlight_%2877%29.png" alt="" height="200px" width="300px">
+                    <p class="location">gurugram, haryana</p>
+                    <p class="deadline">APRIL 15, 2024</p>
+                    <a href="vlog6.html" target="blank">read more</a>
+        </div>
+        <div class="job-listing" >
+               <h3>The Ultimate Collection Management Solution for Small Museums</h3>
+               <img src="https://d1zdxptf8tk3f9.cloudfront.net/articles/1959/large/Org_Suite_of_Devices.png?1726765527" alt="" height="200px" width="300px">
+                <p class="location">Paige Simianer</p>
+                <p class="deadline">APRIL 10, 2024</p>
+                <a href="vlog7.html"target="blank">read more</a>
+        </div>
+        <div class="job-listing" >
+                <h3>GUIDE: The Best Artist Grants & Opportunities in October 2024</h3>
+                <img src="https://d1zdxptf8tk3f9.cloudfront.net/articles/2000/large/artist_opps_cover_images__%281%29.png?1726171777" alt="" height="200px" width="300px">
+                <p class="location">Paige Simianer</p>
+                <p class="deadline">MARCH 30, 2024</p>
+                <a href="vlog8.html" target="blank">read more</a></div>
+            </div>
+      
+                
+</section>
+<script>
+    document.getElementById('locationFilter').addEventListener('change', filterJobs);
+    document.getElementById('jobTypeFilter').addEventListener('change', filterJobs);
+    document.getElementById('industryFilter').addEventListener('change', filterJobs);
+    document.getElementById('experienceFilter').addEventListener('change', filterJobs);
+    
+    function filterJobs() {
+        const locationFilter = document.getElementById('locationFilter').value;
+        const jobTypeFilter = document.getElementById('jobTypeFilter').value;
+        const industryFilter = document.getElementById('industryFilter').value;
+        const experienceFilter = document.getElementById('experienceFilter').value;
+    
+        const jobListings = document.querySelectorAll('.job-listing');
+    
+        jobListings.forEach(function(jobListing) {
+            const location = jobListing.getAttribute('data-location');
+            const jobType = jobListing.getAttribute('data-job-type');
+            const industry = jobListing.getAttribute('data-industry');
+            const experience = jobListing.getAttribute('data-experience');
+    
+            const locationMatch = (locationFilter === 'all' || location === locationFilter);
+            const jobTypeMatch = (jobTypeFilter === 'all' || jobType === jobTypeFilter);
+            const industryMatch = (industryFilter === 'all' || industry === industryFilter);
+            const experienceMatch = (experienceFilter === 'all' || experience === experienceFilter);
+    
+            if (locationMatch && jobTypeMatch && industryMatch && experienceMatch) {
+                jobListing.style.display = 'block';
+            } else {
+                jobListing.style.display = 'none';
+            }
+        });
+    }
+</script>
+</body>
+<footer>
+    <div class="container" id="footer">
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: starnex@galaxy.com</p>
+            <p>Phone:+91 1234567890</p>
+            <p>Address: 123, Model Town, XYZ Nagar, Rajpura</p>
+        </div>
+        <div class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="list">
+                <li><a href="./SignUp.html" target="_blank"></a>Register</li>
+                <li><a href="discover.html" target="_blank">Discover</a></li>
+                <li><a href="feedback.html" target="_blank">Feedback</a></li>
+                <li><a href="./https://mail.google.com/mail/u/0/#inbox" target="_blank">ContactUs</a></li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="https://webstockreview.net/images/white-facebook-icon-png-4.png" alt="Facebook" style="height: 20px; width: 20px;"></a></li>
+
+                <li><a href="https://twitter.com/login" target="_blank"><img src="https://www.pinclipart.com/picdir/big/578-5789236_twitter-clipart.png" alt="x" style="height: 17px; width: 20px;"></a></li>
+
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="https://www.pngkey.com/png/full/1-19361_watercolor-instagram-icon-png-instagram-logo-white-on.png" alt="instagram" style="height: 17px; width: 17px;"></a></li>
+
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="https://th.bing.com/th/id/R.3cfbc995df96e1ace93e0d23e5884b3e?rik=7N4nANscprreig&riu=http%3a%2f%2fclipart-library.com%2fimages%2fdc4LABqni.png&ehk=wMo4WyijaHWTJt1nMQKvD06j9%2fjkDwXAO%2btufnjfRwU%3d&risl=&pid=ImgRaw&r=0" alt="yt" style="height: 15px; width: 20px;"></a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 STARNEX . All rights reserved</p>
+    </div>
+</footer>
+</html>
